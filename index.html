@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b526e814cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="images/thirupati Resume.pdf" download class="btn btn2">Download CV</a>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, This is <span>Thirupathi Rao Meesala</span></h1>
+            <p>•Software Engineer with 1+ year of <span>professional work experience</span> demonstrating proficiency in Java, Python, JavaScript, and C++. Skilled in effective communication, collaboration, and introducing generative ideas to the team. 
+                Active participant in an IoT (Internet of Things) hackathon, focusing on creating connected objects and understanding IoT integration.Proficient in various <span>Spring Modules, including Spring MVC, Spring Core Container, Spring Web, 
+                and Spring AOP (Aspect-Oriented Programming)</span>. Strong foundation in Object-Oriented Programming, and <span>proficiency in Greedy Algorithms such as Knapsack, Dijkstra’s, 0/1 Knapsack, and N-Queen</span>.  
+                Experienced in developing dynamic web applications and <span>Single Page Applications (SPA) using React</span>.  
+                Skilled in using <span>Mongo DB Atlas through Compass for basic CRUD (Create, Read, Update, Delete) operations</span>.  
+                Developed web applications focused on transactions using Flask in Python.  
+                <span>Full-stack Web Developer</span> proficient in coding developing dynamic web pages, server management, troubleshooting, understanding application needs, team collaboration, and identifying customer requirements.  
+                Utilized Tess4J for interfacing with Tesseract APIs to extract text from images using Java.  
+                Led the overhaul of <span>website front-end development, supporting back-end programming,</span> which resulted in a 13% improvement in load times and a 19% increase in site stickiness, contributing to a significant 125% increase in web traffic.  
+                Experience with J2EE Framework components such as <span>Servlets, JSP, EJB, JDBC</span>.  
+                Knowledge on <span>MVC framework</span> like Spring/Struts and ORM tools such as Hibernate.  
+                </p>
+        </div>
+    </div>
+
+</div>
+
+
+<!------About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                Experienced Software Engineer with over a year of professional expertise in Java,<br> 
+                Python, JavaScript, and C++, adept at dynamic web development, IoT integration, and
+                leading impactful projects. Proficient in Spring modules, React,and
+                MongoDB, demonstrated by optimizing website performance, resulting in a 13% <br>
+                improvement in load times and a 125% increase in web traffic.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Engineer</span><br>Full Stack Developer</li>
+                        <li><span>Front-end Development</span><br>User Interface (UI)</li>
+                        <li><span>Back-end Development</span><br>Server-side</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - 2022</span><br>Programmer Anaylst at Cognizent •	I worked on the News Portal Redesign using Java and JavaScript for high-quality code development.  
+                            •	I led a front-end overhaul with React.js for a modern, responsive layout, utilizing HTML5 and CSS3 for dynamic media elements. 
+                            •	I actively participated in an agile development environment, including sprint planning, daily stand-up meetings, and retrospectives. 
+                            •	I achieved notable results by boosting web traffic by 125% through improved navigation, dynamic media, virtual tours, and social media integration. Additionally, I achieved a 13% enhancement in site speed and a 19% increase in user engagement. 
+                            •	My experience also includes back-end programming using Node.js and Express.js, with MongoDB for efficient data storage. 
+                            •	I integrated social media APIs to enable content sharing functionalities and implemented RESTful APIs for smooth communication between the front end and back end. 
+                            •	My experience showcases my design skills, ability to achieve results, and proficiency in working with 
+                            software technologies. 
+                            </li>
+            
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>MS in CS from NAU</li>
+                        <li><span>2018 - 2022</span><br>B.tech in ECE from Kalasalingam University</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Services-->
+<div id="services">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Snake Game Design</h2>
+            <p>Engineered a Java-based snake game leveraging the Java Graphics Library within Eclipse, 
+            enhancing user interaction and gameplay experience</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Blockchain Transection Design</h2>
+            <p>Constructed a blockchain-based transaction system using HTML, CSS, JavaScript for frontend development, 
+                and Python with Flask for backend processing. </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Lights Out puzzle game Design</h2>
+            <p>Developed a 'Lights Out' puzzle game using React and JavaScript, requiring players to strategically toggle 
+                the states of lights on a grid and their adjacent counterparts to achieve the goal of turning off all lights</p>
+            <a href="#">Learn more</a>
+        </div>
+
+      </div>  
+    </div>
+</div>
+
+<!-----protfolio---->
+
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png.jpeg">
+                <div class="layer">
+                    <h3>Snake Game Design</h3>
+                    <p>Engineered a Java-based snake game leveraging the Java Graphics Library within Eclipse, 
+                    enhancing user interaction and gameplay experience</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>University Portal Design</h3>
+                    <p>Designed and implemented a university website using HTML, CSS, and JavaScript, 
+                    focusing on responsive design and user-friendly navigation</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Light Out Puzzle Game Design</h3>
+                    <p>Developed a 'Lights Out' puzzle game using React and JS, 
+                    requiring players to strategically toggle the states of lights on a grid and their adjacent counterparts to achieve the goal of turning off all lights</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!---Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>thirupathiraomeesala@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1 (928)-225-0888</p>
+                <div class="social-icon">
+                
+                    <a href="https://github.com/thirupathiraomeesala"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/MEESALATHIRUPA3"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/thiru_pathi5027/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/thirupathi2001"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/rao.meesala.1"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/thirupati Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Thirupathi</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcKtezjwqUKHTbYOVChDV8O8q38T221PJ6nWlAMSOjyo-azCw1eWOiXXhyqU-frwnB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
